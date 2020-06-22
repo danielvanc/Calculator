@@ -11,3 +11,5 @@ Uses:
 - React Hooks
 - Redux
 - Styled Components
+
+See the list of current issue's to see what's about to be worked on.
