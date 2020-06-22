@@ -1,4 +1,4 @@
-🧮# Calculator
+# 🔘 Calculator
 
 A small project I made to help complete
 the freeCodeCamp.org 'Frontend
