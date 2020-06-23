@@ -639,13 +639,14 @@ const MainStuff = ({
  * Create Redux store with the reducer to handle the actions passed
  * This also includes the redux dev tools extension enablers
  */
-
-const store = createStore(
-  calculatorReducer,
-  window.__REDUX_DEVTOOLS_EXTENSION__ &&
-    window.__REDUX_DEVTOOLS_EXTENSION__()
-);
-
+const store =
+  typeof window !== 'undefined'
+    ? createStore(
+        calculatorReducer,
+        window.__REDUX_DEVTOOLS_EXTENSION__ &&
+          window.__REDUX_DEVTOOLS_EXTENSION__()
+      )
+    : createStore(calculatorReducer);
 /**
  * Connect up the mapping of state and dispatching to the main
  * application component - MainStuff

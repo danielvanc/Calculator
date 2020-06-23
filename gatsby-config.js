@@ -5,22 +5,6 @@ require('dotenv').config({
 module.exports = {
   plugins: [
     {
-      resolve:
-        'gatsby-plugin-webpack-bundle-analyser-v2',
-      options: {
-        analyzerMode: `${
-          process.env.GATSBY_CLOUD
-            ? 'static'
-            : 'server'
-        }`,
-        openAnalyzer: `${
-          process.env.GATSBY_CLOUD
-            ? false
-            : true
-        }`,
-      },
-    },
-    {
       resolve: 'gatsby-plugin-eslint',
       options: {
         test: /\.js$|\.jsx$/,
